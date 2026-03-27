@@ -49,10 +49,11 @@ public class Good extends Application{
         stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         //line start
         Line line = new Line();
-        line.setStartX(200);
-        line.setStartY(200);
-        line.setEndX(500);
-        line.setEndY(200);
+        line.setStartX(400);
+        line.setStartY(-100);
+        line.setEndX(1800);
+        line.setEndY(-200);
+        line.setFill(Color.BROWN);
         line.setStrokeWidth(5);
         line.setStroke(Color.RED);
         root.getChildren().add(line);
@@ -71,10 +72,11 @@ public class Good extends Application{
         //triangle start
         Polygon triangle = new Polygon();
         triangle.getPoints().setAll(
-                450.0,450.0,
-                600.0,600.0,
-                900.0,900.0);
+                1600.0,450.0,
+                1800.0,300.0,
+                1600.0,100.0);
         triangle.setFill(Color.YELLOWGREEN);
+        triangle.setStroke(Color.BLACK);
         root.getChildren().add(triangle);
         stage.show();
     }
