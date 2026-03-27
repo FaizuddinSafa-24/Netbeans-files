@@ -26,7 +26,7 @@ public class Good extends Application{
     public void start(Stage stage) {
         Group root = new Group();
         //scene starts
-        Scene scene = new Scene(root, 300, 500, Color.CHOCOLATE);
+        Scene scene = new Scene(root, 300, 500);
         stage.setScene(scene);
         stage.setTitle("Good Developer Grows Steadily");
         //label starts
@@ -71,10 +71,10 @@ public class Good extends Application{
         //triangle start
         Polygon triangle = new Polygon();
         triangle.getPoints().setAll(
-                150.0,150.0,
-                200.0,200.0,
-                300.0,300.0);
-                
+                450.0,450.0,
+                600.0,600.0,
+                900.0,900.0);
+        triangle.setFill(Color.YELLOWGREEN);
         root.getChildren().add(triangle);
         stage.show();
     }
