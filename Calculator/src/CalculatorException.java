@@ -7,6 +7,8 @@
  *
  * @author safa
  */
-public class CalculatorException {
-    
+public class CalculatorException extends RunTimeException {
+    public CalculatorException(String msg) {
+        
+    }
 }
