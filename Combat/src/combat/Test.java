@@ -9,14 +9,16 @@
  */
 public class Test {
     public static void main(String[] args) {
-        Combatant combat = new Combatant("Jhantu Khan",100);
-        combat.displaydetails();
-        combat.performSpecialMove(combat);
+        Combatant k2 = new MartialArtist("Sujon Majhi",100);
+        Combatant k1 = new SuperSoldier("Vikram Rathore",100);
         
-        combat = new MartialArtist("Sujon Majhi",100);
-        combat.performSpecialMove(combat);
+      
+        k1.displaydetails();
+        k1.performSpecialMove(k2);
         
-        
+        k2.displaydetails();
+        k2.performSpecialMove(k1);
+       
         
     }
 }

@@ -8,7 +8,7 @@
  * @author 602.14.IP114
  */
 public class Combatant {
-    String name;
+    private String name; // data fields must be private
     private int health;
     public Combatant() {
         
@@ -17,6 +17,7 @@ public class Combatant {
         this.health = health;
         this.name = name;
     }
+    //getter/setter methd must be public, otherwise failure in accees/mutate
     public void setName(String name) {
         this.name = name;
     }

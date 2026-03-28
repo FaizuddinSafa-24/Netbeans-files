@@ -15,7 +15,12 @@ public class SuperSoldier extends Combatant {
         super(name, health);
     } 
     @Override
+    public void displaydetails() {
+     System.out.println("Name:"+this.getName());
+        System.out.println("Health: "+this.getHealth());
+    }
+    @Override
     public void performSpecialMove(Combatant k) {
-        
+        System.out.println(this.getName()+" has caused "+ (int)(k.getHealth()-8-10*Math.random())+" points to "+ k.getName()+" by Jawan Punch");
     }
 }
