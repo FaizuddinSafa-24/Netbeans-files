@@ -7,8 +7,14 @@
  *
  * @author safa
  */
-public class CalculatorException extends RunTimeException {
-    public CalculatorException(String msg) {
-        super(msg);
+public class AddOperation implements Operation{
+    
+    @Override
+    public double executing(double a, double b) {
+        return a+b;
+    }
+    @Override
+    public String getSymbol() {
+        return "+";
     }
 }
