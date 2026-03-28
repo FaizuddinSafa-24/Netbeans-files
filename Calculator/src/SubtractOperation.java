@@ -7,17 +7,17 @@
  *
  * @author safa
  */
-public class SubtractOperation {
-   public class AddOperation implements Operation{
+public class SubtractOperation implements Operation{
+  
     
     @Override
     public double executing(double a, double b) {
-        return a+b;
+        return a-b;
     }
     @Override
     public String getSymbol() {
-        return "+";
+        return "-";
     }
 }
  
-}
+
