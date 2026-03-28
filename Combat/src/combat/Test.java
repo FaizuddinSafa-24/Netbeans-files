@@ -16,5 +16,7 @@ public class Test {
         combat = new MartialArtist("Sujon Majhi",100);
         combat.performSpecialMove(combat);
         
+        
+        
     }
 }

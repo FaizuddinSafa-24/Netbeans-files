@@ -17,7 +17,7 @@ public class Combatant {
         this.health = health;
         this.name = name;
     }
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     
@@ -27,12 +27,12 @@ public class Combatant {
     public int getHealth() {
         return health;
     }
-    void recover() {
+    public void recover() {
         this.health = 100;
     }
-    void displaydetails() {
-        System.out.println("Name:"+this.name);
-        System.out.println("Health: "+this.health);
+    public void displaydetails() {
+        System.out.println("Name:"+name);
+        System.out.println("Health: "+health);
     }
     public void performSpecialMove(Combatant k) {
         System.out.println("Run it from the instance of the Child Class");

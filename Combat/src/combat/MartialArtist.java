@@ -21,7 +21,7 @@ public class MartialArtist extends Combatant {
     @Override
     public void performSpecialMove(Combatant k) {
         
-        System.out.println(this.getName() + " has performed the MAjhi Smacker to Jhantu Khan by "+(int)(this.getHealth()-10-(Math.random()*5)));
+        System.out.println(k.getName() + " has performed the MAjhi Smacker to Jhantu Khan by "+(int)(k.getHealth()-10-(Math.random()*5)));
         // first bug in operator precedence: messed with String-getHealth()+int-10 
         // subtracting 10 cause complie error : needed to bring into parentheses
         //type-casting to int: (int) needed
