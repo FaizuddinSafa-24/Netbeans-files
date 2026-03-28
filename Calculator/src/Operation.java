@@ -7,6 +7,7 @@
  *
  * @author safa
  */
-public class Operation {
-    
+public interface Operation {
+    double executing(double a, double b);
+    String getSymbol();
 }
