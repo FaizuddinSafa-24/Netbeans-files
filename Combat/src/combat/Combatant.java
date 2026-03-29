@@ -38,4 +38,7 @@ public class Combatant {
     public void performSpecialMove(Combatant k) {
         System.out.println("Run it from the instance of the Child Class");
     }
+    public void healthDeplete(int damage) {
+        this.health = this.getHealth()-damage;
+    }
 } 
