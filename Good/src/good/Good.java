@@ -7,6 +7,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -89,8 +90,13 @@ public class Good extends Application{
         circle.setStroke(Color.BLACK);
         circle.setStrokeWidth(2);
         root.getChildren().add(circle);
-                
-        stage.show();
+        
+        //start image
+        Image image = new Image("/home/safa/Documents/Netbeans/Good/src/averast.jpeg");
+        ImageView imageview = new ImageView(image);
+        imageview.setX(1000);
+        imageview.setY(1000);
+        root.getChildren().add(imageview);
     }
     public static void main(String[] args) {
         // TODO code application logic here
