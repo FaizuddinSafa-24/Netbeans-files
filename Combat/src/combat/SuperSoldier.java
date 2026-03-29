@@ -21,8 +21,8 @@ public class SuperSoldier extends Combatant {
     }
     @Override
     public void performSpecialMove(Combatant k) {
-        int damage = (int)(k.getHealth()-8-10*Math.random());
-        System.out.println(this.getName()+" has caused "+damage+" points to "+ k.getName()+" by Jawan Punch");
+        int damage = (int)(8+10*Math.random());
+        System.out.println(this.getName()+" has caused "+(k.getHealth()-damage)+" points to "+ k.getName()+" by Jawan Punch");
         k.healthDeplete(damage);
     }
 }

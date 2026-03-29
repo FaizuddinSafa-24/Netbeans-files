@@ -13,13 +13,15 @@ public class Test {
         Combatant k2 = new MartialArtist("Sujon Majhi", 100);
         Combatant k1 = new SuperSoldier("Vikram Rathore", 100);
         while (true) {
+            //System.out.println(k1.getHealth());
+            //for debug
             int choice = (int) Math.ceil(Math.random() * 2);
-            if (k1.getHealth() == 0 || k2.getHealth() == 0) {
-                if (k1.getHealth() != 0) {
-                    System.out.println(k1.getName() + " is winner.");
-                    break;
-                } else {
+            if (k1.getHealth() <= 0 || k2.getHealth() <= 0) {
+                if (k1.getHealth() <= 0) {
                     System.out.println(k2.getName() + " is winner.");
+                    break;
+                } else if(k2.getHealth() <=0) {
+                    System.out.println(k1.getName() + " is winner.");
                     break;
                 }
             } else {
