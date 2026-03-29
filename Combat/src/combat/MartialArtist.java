@@ -8,7 +8,7 @@
  * @author 602.14.IP114
  */
 public class MartialArtist extends Combatant {
-    int baseDamage=10;
+    
     public  MartialArtist() {
         
     }
