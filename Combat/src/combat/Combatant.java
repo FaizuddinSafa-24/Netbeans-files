@@ -7,7 +7,7 @@
  *
  * @author 602.14.IP114
  */
-public class Combatant implements Cloneable {
+public class Combatant  {
 
     private String name; // data fields must be private
     private int health;
