@@ -50,8 +50,6 @@ public class Combatant implements Cloneable {
     public void healthDeplete(int damage) {
         this.health = this.getHealth() - damage;
     }
-
-    public Combatant getWinner() {
-        
-    }
+}
+    
 

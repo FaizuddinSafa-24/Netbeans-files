@@ -48,9 +48,9 @@ public class Test {
             Combatant k4;
             int check = 0;
             if(k1.getHealth() > k2.getHealth()) {
-                check =1;
+                k4 =k1;
             } else {
-                check =2;
+                k4 = k2;
             }
                
             k1.getHealth();
@@ -58,12 +58,7 @@ public class Test {
         while (true) {
             //System.out.println(k1.getHealth());
             //for debug
-            if (check ==1) {
-                k4 = (Combatant) k1.clone();
-            } else {
-                k4 = (Combatant) k2.clone();
-                
-            }
+            
             int choice = (int) Math.ceil(Math.random() * 2);
             if (k3.getHealth() <= 0 || k4.getHealth() <= 0) {
                 if (k3.getHealth() <= 0) {
