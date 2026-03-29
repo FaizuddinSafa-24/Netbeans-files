@@ -92,7 +92,7 @@ public class Good extends Application{
         root.getChildren().add(circle);
         
         //start image
-        Image image = new Image("/home/safa/Documents/Netbeans/Good/src/averast.jpeg");
+        Image image = new Image(Good.class.getResourceAsStream("averast.jpeg"));
         ImageView imageview = new ImageView(image);
         imageview.setX(1000);
         imageview.setY(1000);
