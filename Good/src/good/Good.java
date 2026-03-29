@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
@@ -49,12 +50,12 @@ public class Good extends Application{
         stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         //line start
         Line line = new Line();
-        line.setStartX(400);
-        line.setStartY(-100);
-        line.setEndX(1800);
-        line.setEndY(-200);
+        line.setStartX(700);
+        line.setStartY(200);
+        line.setEndX(900);
+        line.setEndY(200);
         line.setFill(Color.BROWN);
-        line.setStrokeWidth(5);
+        line.setStrokeWidth(50);
         line.setStroke(Color.RED);
         root.getChildren().add(line);
         
@@ -78,6 +79,17 @@ public class Good extends Application{
         triangle.setFill(Color.YELLOWGREEN);
         triangle.setStroke(Color.BLACK);
         root.getChildren().add(triangle);
+        
+        //Circle start
+        Circle circle = new Circle();
+        circle.setCenterX(850);
+        circle.setCenterY(850);
+        circle.setRadius(150);
+        circle.setFill(Color.ORANGE);
+        circle.setStroke(Color.BLACK);
+        circle.setStrokeWidth(2);
+        root.getChildren().add(circle);
+                
         stage.show();
     }
     public static void main(String[] args) {
