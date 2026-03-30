@@ -16,6 +16,6 @@ public class Console implements CalculatorSurface {
     }
     @Override
     public void showError(String error) {
-        System.out.println("Bang!Error: "+);
+        System.out.println("Bang!Error: "+ error);
     }
 }
