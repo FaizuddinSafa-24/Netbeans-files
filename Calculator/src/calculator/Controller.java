@@ -17,7 +17,16 @@ public class Controller {
         this.view = view;
     }
     public void clearPressed() {
-        logic.clear();
-        view.
+        this.logic.clear();
+        this.view.updateDisplay("0");
+    }
+    public void digitPress(String digit) {
+        this.logic.inputDigit(digit);
+        this.view.updateDisplay(logic.getInputNow());
+    }
+    public void opPressed(String symbol) {
+        Operation op =OperationTheatre.getOperation(symbol);
+        this.logic.setOperation(op);
+        this.view.updateDisplay(logic.getInputNow());
     }
 }
