@@ -24,8 +24,8 @@ public class CalculationBrain{
     }
     public double calculate() {
         this.currentValue= Double.parseDouble(inputNow);
-        if(pending==null) {
-            throw new CalculatorException("Arithmetic Operator missing! ");
+        if(pending==null) { 
+            throw new CalculatorException("Arit
         } else {
             this.currentValue= pending.executing(pastValue, currentValue);
             return this.currentValue;
