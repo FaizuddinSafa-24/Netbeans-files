@@ -14,7 +14,7 @@ public class CalculationBrain{
     private String inputNow;
     
     public void inputDigit(String digit) {
-        
+        this.inputNow+= digit;
     }
     public void setOperation(Operation operate) {
         
