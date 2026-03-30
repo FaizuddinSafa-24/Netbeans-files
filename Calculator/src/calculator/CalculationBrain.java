@@ -17,11 +17,19 @@ public class CalculationBrain{
         this.inputNow+= digit;
     }
     public void setOperation(Operation operate) {
-     this.pastValue= Dou
+     this.pastValue= Double.parseDouble(inputNow);
+     this.pending= operate;
+     this.inputNow="";
      
     }
     public double calculate() {
-        
+        this.currentValue= Double.parseDouble(inputNow);
+        if(pending==null) {
+            throw new CalculatorException("Arithmetic Operator missing! ");
+        } else {
+            this.currentValue= pending.executing(pastValue, currentValue);
+            return this.currentValue;
+        }
     }
     public void clear() {
         this.currentValue= 0.0;
