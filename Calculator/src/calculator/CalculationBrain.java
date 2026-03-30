@@ -51,6 +51,6 @@ public class CalculationBrain {
     }
 
     public boolean pendingOperation() {
-        if(pending)
+        return pending !=null;
     }
 }
