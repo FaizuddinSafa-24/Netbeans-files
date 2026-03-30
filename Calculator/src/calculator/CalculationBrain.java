@@ -15,7 +15,7 @@ public class CalculationBrain {
     private String inputNow;
 
     public void inputDigit(String digit) {
-        this.inputNow += digit;
+        this.inputNow += digzit;
     }
 
     public void setOperation(Operation operate) {
@@ -28,7 +28,7 @@ public class CalculationBrain {
     public double calculate() {
         this.currentValue = Double.parseDouble(inputNow);
         if (pending == null) {
-
+            return Double.parseDouble(inputNow);
         } else {
             this.currentValue = pending.executing(pastValue, currentValue);
             return this.currentValue;
@@ -43,14 +43,14 @@ public class CalculationBrain {
     }
 
     public double getCurrentValue() {
-
+        return currentValue;
     }
 
     public String getInputNow() {
-
+        return inputNow;
     }
 
     public boolean pendingOperation() {
-
+        if(pending)
     }
 }
