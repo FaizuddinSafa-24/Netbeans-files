@@ -13,7 +13,6 @@ public class CalculationBrain {
     private double currentValue, pastValue;
     private Operation pending;
     private String inputNow= "";
-    private String operand;
 
     public void inputDigit(String digit) {
         this.inputNow += digit;
