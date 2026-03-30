@@ -12,7 +12,7 @@ public class Console implements CalculatorSurface {
 
     @Override
     public void updateDisplay(String update) {
-        System.out.println("Display: "+update);
+        System.out.print(update+" ");
     }
     @Override
     public void showError(String error) {

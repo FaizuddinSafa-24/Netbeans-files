@@ -27,10 +27,11 @@ public class Controller {
     public void opPressed(String symbol) {
         Operation op =OperationTheatre.getOperation(symbol);
         this.logic.setOperation(op);
-        this.view.updateDisplay(logic.getInputNow());
+        this.view.updateDisplay(op.getSymbol());
     }
     public void equalpressed() {
      try{
+         System.out.print("=");
          this.view.updateDisplay(String.valueOf(logic.calculate()));
      } catch (CalculatorException e){
          this.view.showError(e.getMessage());
