@@ -8,6 +8,16 @@ package calculator;
  *
  * @author safa
  */
-public class DivOperation {
-    
+public class DivOperation implements Operation{
+    @Override
+    public double executing(double a, double b) {
+        if(b==0) {
+            throw new CalculatorException("Cannot Divide by Zero!");
+        }
+        return a/b;
+    }
+    @Override
+    public String getSymbol() {
+        return "/";
+    }
 }
