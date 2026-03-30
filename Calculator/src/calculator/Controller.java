@@ -29,4 +29,11 @@ public class Controller {
         this.logic.setOperation(op);
         this.view.updateDisplay(logic.getInputNow());
     }
+    public void equalpressed() {
+     try{
+         this.view.updateDisplay(String.valueOf(logic.calculate()));
+     } catch (CalculationException e){
+         this.view.showError(e.getMessage());
+     }
+    }
 }

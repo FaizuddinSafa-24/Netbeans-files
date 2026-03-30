@@ -26,10 +26,10 @@ public class CalculationBrain {
     }
 
     public double calculate() {
-        this.currentValue = Double.parseDouble(inputNow);
         if (pending == null) {
             return Double.parseDouble(inputNow);
         } else {
+            this.currentValue = Double.parseDouble(inputNow);
             this.currentValue = pending.executing(pastValue, currentValue);
             return this.currentValue;
         }
