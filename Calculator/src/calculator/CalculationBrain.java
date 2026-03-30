@@ -17,7 +17,8 @@ public class CalculationBrain{
         this.inputNow+= digit;
     }
     public void setOperation(Operation operate) {
-        
+     this.pastValue= Dou
+     
     }
     public double calculate() {
         
