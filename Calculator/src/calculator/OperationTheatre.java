@@ -17,7 +17,7 @@ public class OperationTheatre {
             case"/": return new DivOperation();
             
             default:
-                re throw new Calculationeception("Add, Subtract, Multiply, and Div Allowed");
+                 throw new CalculatorException("Add, Subtract, Multiply, and Div Allowed");
         }
     }
 }
