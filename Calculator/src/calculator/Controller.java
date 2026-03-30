@@ -9,7 +9,15 @@ package calculator;
  * @author safa
  */
 public class Controller {
-    private CalculatorSuface view;
+    private CalculatorSurface view;
     private CalculationBrain logic;
     
+    public Controller(CalculatorSurface view, CalculationBrain logic) {
+        this.logic=logic;
+        this.view = view;
+    }
+    public void clearPressed() {
+        logic.clear();
+        view.
+    }
 }
