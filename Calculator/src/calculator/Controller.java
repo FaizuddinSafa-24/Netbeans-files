@@ -32,7 +32,7 @@ public class Controller {
     public void equalpressed() {
      try{
          this.view.updateDisplay(String.valueOf(logic.calculate()));
-     } catch (CalculationException e){
+     } catch (CalculatorException e){
          this.view.showError(e.getMessage());
      }
     }
