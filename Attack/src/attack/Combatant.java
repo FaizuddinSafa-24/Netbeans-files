@@ -52,7 +52,7 @@ public class Combatant {
 
     public static Combatant attack(Combatant k1, Combatant k2) {
         while (true) {
-            int choice = (int) Math.ceil(Math.random() * 2);
+            int choice = (int) (Math.random() * 3);
             if (k1.getHealth() <= 0 || k2.getHealth() <= 0) {
 
                 if (k1.getHealth() <= 0) {
@@ -65,12 +65,14 @@ public class Combatant {
             } else {
                 switch (choice) {
                     case 1:
-                        k1.displayDetails();
                         k1.performSpecialMove(k2);
+                        k1.displayDetails();
+                        k2.displayDetails();
                         break;
                     case 2:
-                        k2.displayDetails();
                         k2.performSpecialMove(k1);
+                        k2.displayDetails();
+                        k1.displayDetails();
                         break;
                 }
             }
