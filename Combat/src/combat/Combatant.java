@@ -2,12 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author 602.14.IP114
  */
-public class Combatant  {
+package combat;
+
+public class Combatant {
 
     private String name; // data fields must be private
     private int health;
@@ -50,6 +51,7 @@ public class Combatant  {
     public void healthDeplete(int damage) {
         this.health = this.getHealth() - damage;
     }
+
     public static Combatant winner(Combatant k1, Combatant k2) {
         while (true) {
             //System.out.println(k1.getHealth());
@@ -57,12 +59,10 @@ public class Combatant  {
             int choice = (int) Math.ceil(Math.random() * 2);
             if (k1.getHealth() <= 0 || k2.getHealth() <= 0) {
                 if (k1.getHealth() <= 0) {
-                    k2.recover();
-                    
+
                     System.out.println(k2.getName() + " is winner.");
                     return k2;
                 } else if (k2.getHealth() <= 0) {
-                    k1.recover();
                     System.out.println(k1.getName() + " is winner.");
                     return k1;
                 }
@@ -81,9 +81,6 @@ public class Combatant  {
                 }
             }
         }
-        
-        
+
     }
 }
-    
-

@@ -11,6 +11,8 @@
  *
  * @author safa
  */
+package combat;
+
 public class SuperAgent extends Combatant {
     public SuperAgent() {
         
@@ -18,15 +20,12 @@ public class SuperAgent extends Combatant {
     public SuperAgent(String name, int health) {
         super(name, health);
     } 
-    @Override
-    public void displaydetails() {
-     System.out.println("Name:"+this.getName());
-        System.out.println("Health: "+this.getHealth());
-    }
+    
+    
     @Override
     public void performSpecialMove(Combatant k) {
         int damage = (int)(9+8*Math.random());
-        System.out.println(this.getName() + " has struck  "+ k.getName()+" with Tiger Drive Shot and caused "+(k.getHealth()-damage) +" points. ");
+        System.out.println(super.getName() + " has struck  "+ k.getName()+" with Tiger Drive Shot and caused "+damage +" points. ");
         k.healthDeplete(damage);
     }
 }

@@ -7,6 +7,8 @@
  *
  * @author 602.14.IP114
  */
+package combat;
+
 public class MartialArtist extends Combatant {
     
     public  MartialArtist() {
@@ -18,16 +20,12 @@ public class MartialArtist extends Combatant {
 //    public int baseDamage() {
 //        this.health= health-baseDamage;
 //    }
-    @Override
-    public void displaydetails() {
-        System.out.println("Name:"+this.getName());
-        System.out.println("Health: "+this.getHealth());
-    }
+    
     @Override
     public void performSpecialMove(Combatant k) {
         int damage = (int)(10+(Math.random()*5));
         
-        System.out.println(this.getName() + " has performed the Majhi Smacker to  "+ k.getName()+" by "+(k.getHealth()-damage) +" points. ");
+        System.out.println(this.getName() + " has performed the Majhi Smacker to  "+ k.getName()+" by "+damage +" points. ");
         // first bug in operator precedence: messed with String-getHealth()+int-10 
         // subtracting 10 cause complie error : needed to bring into parentheses
         //type-casting to int: (int) needed
