@@ -74,6 +74,8 @@ public class Combatant {
                         k2.displayDetails();
                         k1.displayDetails();
                         break;
+                    default:
+                        break;
                 }
             }
         }
