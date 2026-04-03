@@ -5,6 +5,8 @@
 package gui;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -19,5 +21,13 @@ public class JFrame1 {
         frame.setBounds(200, 100, 500, 400);
         //frame.setTitle("Welcome");
         frame.setResizable(false);
+        frame.setLayout(new FlowLayout());
+        JLabel l1 = new JLabel("Number 1:");
+        JLabel l2 = new JLabel("Number 2:");
+        JTextField t1 = new JTextField(10);
+        JTextField t2 = new JTextField(10);
+        frame.add(t2);
+        frame.add(t1);
+                
     }
 }
