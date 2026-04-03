@@ -18,7 +18,9 @@ public class GUI {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        JOptionPane.showMessageDialog(null, "Wrong Password");
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",3);
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",1);
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",2);
     }
     
 }
