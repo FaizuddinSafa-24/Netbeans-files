@@ -19,10 +19,11 @@ public class GUI {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOpt);
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",1);
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",2);
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
         ImageIcon icon = new ImageIcon("/home/safa/Documents/Netbeans/GUI/src/gui/images.png");
+        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE, icon);
         //JOptionPane.showMessageDialog(null, "Wrong Password", "information",); // need claude for image show as icon
         
         // input add
