@@ -17,18 +17,18 @@ public class GUI {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
-        ImageIcon icon = new ImageIcon("/home/safa/Documents/Netbeans/GUI/src/gui/images.png");
-        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE, icon);
-        //JOptionPane.showMessageDialog(null, "Wrong Password", "information",); // need claude for image show as icon
-        
-        // input add
-        String name = JOptionPane.showInputDialog("Enter your name: ");
-        JOptionPane.showMessageDialog(null, name);
-    }
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
+//        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
+//        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE);
+//        ImageIcon icon = new ImageIcon("/home/safa/Documents/Netbeans/GUI/src/gui/images.png");
+//        JOptionPane.showMessageDialog(null, "Wrong Password", "information",JOptionPane.INFORMATION_MESSAGE, icon);
+//        //JOptionPane.showMessageDialog(null, "Wrong Password", "information",); // need claude for image show as icon
+//        
+//        // input add
+//        String name = JOptionPane.showInputDialog("Enter your name: ");
+//        JOptionPane.showMessageDialog(null, name);
+//    }
     
 }
