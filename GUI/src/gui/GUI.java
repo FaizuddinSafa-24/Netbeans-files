@@ -4,6 +4,7 @@
  */
 package gui;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,6 +22,12 @@ public class GUI {
         JOptionPane.showMessageDialog(null, "Wrong Password", "information",3);
         JOptionPane.showMessageDialog(null, "Wrong Password", "information",1);
         JOptionPane.showMessageDialog(null, "Wrong Password", "information",2);
+        ImageIcon icon = new ImageIcon("/home/safa/Documents/Netbeans/GUI/src/gui/images.png");
+        //JOptionPane.showMessageDialog(null, "Wrong Password", "information",); // need claude for image show as icon
+        
+        // input add
+        String name = JOptionPane.showInputDialog("Enter your name: ");
+        JOptionPane.showMessageDialog(null, name);
     }
     
 }
