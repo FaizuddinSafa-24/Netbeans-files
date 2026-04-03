@@ -15,6 +15,7 @@ public class JFrame1 {
         JFrame frame = new JFrame();
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(200, 400);
+        //frame.setSize(200, 400);
+        frame.setBounds(200, 100, 500, 400);
     }
 }
