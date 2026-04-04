@@ -43,12 +43,12 @@ public class Good extends Application{
         text.setFill(Color.AQUA);
         root.getChildren().add(text);
         // img upload
-        Image img = new Image("images.png");
+        Image img = new Image(Good.class.getResourceAsStream("averast.jpeg"));
         stage.getIcons().add(img);
         // ful screen
-        stage.setFullScreen(true);
-        stage.setFullScreenExitHint("Press q to exit");
-        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
+//        stage.setFullScreen(true);
+//        stage.setFullScreenExitHint("Press q to exit");
+//        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         //line start
         Line line = new Line();
         line.setStartX(700);
@@ -92,11 +92,13 @@ public class Good extends Application{
         root.getChildren().add(circle);
         
         //start image
-        Image image = new Image(Good.class.getResourceAsStream("averast.jpeg"));
+        //Image image = new Image("Duck.jpeg");
+        Image image = new Image(Good.class.getResourceAsStream("Duck.jpeg"));
         ImageView imageview = new ImageView(image);
         imageview.setX(1000);
         imageview.setY(1000);
         root.getChildren().add(imageview);
+        stage.show();
     }
     public static void main(String[] args) {
         // TODO code application logic here
