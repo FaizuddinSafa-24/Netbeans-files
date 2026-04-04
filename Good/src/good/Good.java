@@ -46,9 +46,9 @@ public class Good extends Application{
         Image img = new Image(Good.class.getResourceAsStream("averast.jpeg"));
         stage.getIcons().add(img);
         // ful screen
-//        stage.setFullScreen(true);
-//        stage.setFullScreenExitHint("Press q to exit");
-//        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
+        stage.setFullScreen(true);
+        stage.setFullScreenExitHint("Press q to exit");
+        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
         //line start
         Line line = new Line();
         line.setStartX(700);
