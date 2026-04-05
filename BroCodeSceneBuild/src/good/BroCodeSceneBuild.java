@@ -18,13 +18,18 @@ import javafx.stage.Stage;
 public class BroCodeSceneBuild extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-        
-        Scene scene = new Scene(root);
+        Stage stg = new Stage();
+        Parent root1 = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("CSSadd.fxml"));
         // need to add later lines into new commit
         String style = this.getClass().getResource("application.css").toExternalForm();
+        Scene scene = new Scene(root);
         scene.getStylesheets().add(style);
-        stage.setScene(scene);
+        stg.setScene(scene);
+        stg.show();
+        Scene scene1 = new Scene(root1);
+        scene.getStylesheets().add(style);
+        stage.setScene(scene1);
         stage.show();
         
     }
