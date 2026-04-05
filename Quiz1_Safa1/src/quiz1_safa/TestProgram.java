@@ -25,6 +25,7 @@ public class TestProgram {
         a[1] = new Attendee("Zara", 4187, c[1]);
         for( int i= 0; i <a.length; i++) {
             a[i].displayAttendeeInfo();
+            c[i].displayConcertDetails();
         }
     }
 

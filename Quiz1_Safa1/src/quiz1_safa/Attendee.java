@@ -8,7 +8,7 @@ package quiz1_safa;
  *
  * @author safa
  */
-public class Attendee extends Concert {
+public class Attendee  {
 
     private String attendeeName;
     private int ticketNumber;
@@ -17,8 +17,8 @@ public class Attendee extends Concert {
     Attendee() {
     }
 
-    Attendee(String attendeeName, int ticketNumber, Performer perfomer) {
-        super(perfomer);
+    Attendee(String attendeeName, int ticketNumber, Concert concert) {
+        this.concert = concert;
         this.attendeeName = attendeeName;
         this.ticketNumber = ticketNumber;
     }
@@ -28,10 +28,11 @@ public class Attendee extends Concert {
     }
 
     public void viewConcertDetails() {
+        System.out.println("The concert name: ");
+        this.concert.displayConcertDetails();
     }
 
     public void displayAttendeeInfo() {
         System.out.println("The attendee name: " + this.attendeeName);
-        System.out.println("The concert name: " + this.attendeeName);
     }
 }

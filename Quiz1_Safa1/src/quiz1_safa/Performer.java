@@ -30,5 +30,7 @@ public class Performer {
     }
 
     public void showPerformerInfo() {
+        System.out.println("Perfomer Name: "+getStageName());
+        System.out.println("Email : "+getEmail());
     }
 }

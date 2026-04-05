@@ -4,11 +4,9 @@
 
 ```java
 for(Attendee i : a) {
-i.displayConcertDetails();
+    i.displayConcertDetails();
 }
 ```
-
-
 ## Changing To
 
 ```java
