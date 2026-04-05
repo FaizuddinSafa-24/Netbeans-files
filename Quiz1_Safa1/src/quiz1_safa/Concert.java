@@ -42,7 +42,6 @@ public class Concert  {
     public void displayConcertDetails() {
         System.out.println("Concert name: "+ name);
         System.out.println("Concert Code: "+ concertCode);
-        System.out.println("Concert Performer: ");
         this.performer.showPerformerInfo();
     }
 }
