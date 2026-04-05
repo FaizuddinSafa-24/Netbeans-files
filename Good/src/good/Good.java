@@ -29,7 +29,8 @@ public class Good extends Application{
      */
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        Group root = new Group();
         //scene starts
         Scene scene = new Scene(root, 300, 500);
         stage.setScene(scene);
