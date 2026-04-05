@@ -1,9 +1,12 @@
 
 package good;
 
+import java.io.IOException;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -25,8 +28,8 @@ public class Good extends Application{
      * @param stage
      */
     @Override
-    public void start(Stage stage) {
-        Group root = new Group();
+    public void start(Stage stage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         //scene starts
         Scene scene = new Scene(root, 300, 500);
         stage.setScene(scene);
