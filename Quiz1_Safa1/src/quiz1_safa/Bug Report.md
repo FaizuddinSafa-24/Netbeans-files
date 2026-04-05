@@ -6,6 +6,7 @@
 for(Attendee i : a) {
 i.displayConcertDetails();
 }
+```
 
 
 ## Changing To
@@ -14,4 +15,5 @@ i.displayConcertDetails();
 for(int i= 0; i <a.length; i++) {
     a[i].displayAttendeeInfo();
 }
+```
 
