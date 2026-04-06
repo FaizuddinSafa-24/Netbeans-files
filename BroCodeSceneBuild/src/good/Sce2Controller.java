@@ -13,9 +13,9 @@ import javafx.scene.control.Label;
  */
 public class Sce2Controller {
     @FXML
-    Label name;
+    Label labelName;
     
     public void displayName(String username) {
-        name.setText("Hello: "+username);
+        labelName.setText("Hello: "+username);
     }
 }
