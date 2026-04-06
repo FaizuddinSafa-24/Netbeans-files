@@ -5,7 +5,7 @@
 package good;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+//import javafx.fxml.FXML;
 import javafx.scene.shape.Circle;
 
 /**
@@ -13,7 +13,7 @@ import javafx.scene.shape.Circle;
  * @author safa
  */
 public class Controller {
-    @FXML
+    //@FXML
     private Circle circle;
     private double x,y;
     public void up(ActionEvent e ){

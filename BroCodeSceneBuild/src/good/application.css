@@ -20,3 +20,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 #title{
     -fx-font-size: 36;
 }
+#text{
+    -fx-font-size: 24;
+    -fx-text-fill:#00cccc;
+}
