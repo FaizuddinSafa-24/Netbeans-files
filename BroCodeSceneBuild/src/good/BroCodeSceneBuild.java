@@ -35,17 +35,13 @@ public class BroCodeSceneBuild extends Application {
         
         //switch between two scene
         Stage stg1 = new Stage();
-        Stage stg2 = new Stage();
         
         Parent rt1 = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
         Scene sce1 = new Scene(rt1);
         stg1.setScene(sce1);
         stg1.show();
         
-//        Parent rt2 = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
-//        Scene sce2 = new Scene(rt2);
-//        stg2.setScene(sce2);
-//        stg2.show();
+
     }
     
     public static void main(String[] args) {

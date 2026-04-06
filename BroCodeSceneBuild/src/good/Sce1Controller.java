@@ -17,26 +17,17 @@ import javafx.stage.Stage;
  *
  * @author safa
  */
-public class SceneController {
+public class Sce1Controller {
     @FXML
-
     private Parent root;
     private Stage stage;
     private Scene scene;
-
-    public void switchToScene1(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
-        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+    
+    public void login(ActionEvent e) throws IOException {
+        root= FXMLLoader.load(getClass().getResource("Sce2.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        stage.setScene(scene);
         stage.show();
     }
-
-    public void switchToScene2(ActionEvent e) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
+    
 }
