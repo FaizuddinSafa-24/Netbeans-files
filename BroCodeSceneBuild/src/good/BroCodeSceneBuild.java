@@ -19,14 +19,16 @@ public class BroCodeSceneBuild extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Stage stg = new Stage();
-        Parent root1 = FXMLLoader.load(getClass().getResource("Main.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("CSSadd.fxml"));
         // need to add later lines into new commit
         String style = this.getClass().getResource("application.css").toExternalForm();
+        
+        Parent root = FXMLLoader.load(getClass().getResource("CSSadd.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add(style);
         stg.setScene(scene);
         stg.show();
+        
+        Parent root1 = FXMLLoader.load(getClass().getResource("Main.fxml"));
         Scene scene1 = new Scene(root1);
         scene.getStylesheets().add(style);
         stage.setScene(scene1);
