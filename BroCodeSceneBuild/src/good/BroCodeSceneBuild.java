@@ -16,6 +16,7 @@ import javafx.stage.Stage;
  * @author safa
  */
 public class BroCodeSceneBuild extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
         Stage stg = new Stage();
@@ -32,11 +33,11 @@ public class BroCodeSceneBuild extends Application {
         Scene scene1 = new Scene(root1);
         stage.setScene(scene1);
         stage.show();
-        
+
         //switch between two scene
         Stage stg1 = new Stage();
         Stage stg2 = new Stage();
-        
+
         Parent rt1 = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
         Scene sce1 = new Scene(rt1);
         stg1.setScene(sce1);
@@ -45,15 +46,23 @@ public class BroCodeSceneBuild extends Application {
         Scene sce2 = new Scene(rt2);
         stg2.setScene(sce2);
         stg2.show();
-//        Parent rt3 = FXMLLoader.load(getClass().getResource("Sce2.fxml"));
-//        Scene sce3 = new Scene(rt3);
-//        stg1.setScene(sce3);
-//        stg1.show();
-        
+
+        //Logout button
+        Stage stg3 = new Stage();
+        Parent rt3 = FXMLLoader.load(getClass().getResource("Logout.fxml"));
+        Scene sce3 = new Scene(rt3);
+        stg3.setScene(sce3);
+        stg3.show();
+
+        stg3.setOnCloseRequest(e -> {
+            e.consume();
+        });
 
     }
-    
+
     public static void main(String[] args) {
         launch(args);
     }
+
+    
 }
