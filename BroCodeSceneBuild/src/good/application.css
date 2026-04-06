@@ -11,9 +11,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .label {
-    
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill : "white";
+    -fx-alignment:CENTER;
 }
 
 #title{
-    
+    -fx-font-size: 36;
 }
