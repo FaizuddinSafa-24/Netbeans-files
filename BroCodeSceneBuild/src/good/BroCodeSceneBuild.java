@@ -55,7 +55,9 @@ public class BroCodeSceneBuild extends Application {
         stg3.show();
 
         stg3.setOnCloseRequest(e -> {
-            //e.consume();
+            e.consume();
+            
+            //consume() stops event building further
         });
 
     }
