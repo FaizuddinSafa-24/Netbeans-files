@@ -6,9 +6,13 @@ package good;
 
 import java.io.IOException;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -56,15 +60,27 @@ public class BroCodeSceneBuild extends Application {
 
         stg3.setOnCloseRequest(e -> {
             e.consume();
+            logout(stg3);
             
             //consume() stops event building further
         });
-
+        
     }
 
     public static void main(String[] args) {
         launch(args);
     }
 
-    
+    public void logout(Stage stage) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Logout");
+        alert.setHeaderText("Your're going to Logout!");
+        alert.setContentText("This action cannot be undone.");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            //stage = (Stage) scenepane.getScene().getWindow();
+            System.out.println("Logout Controller class loaded.");
+            stage.close();
+        }
+    }
 }
