@@ -3,8 +3,11 @@
  */
 
 .root {
-    -fx-background-color: "white";
+    -fx-background-color: #222222;
 }
 .VBox {
     -fx-background-color:"black";
+}
+.TitlePane {
+    -fx-setColor:"black";
 }

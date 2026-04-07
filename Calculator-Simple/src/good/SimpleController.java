@@ -5,8 +5,7 @@
 package good;
 
 import javafx.fxml.FXML;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
+
 
 /**
  * FXML Controller class
@@ -15,14 +14,7 @@ import javafx.scene.layout.VBox;
  */
 public class SimpleController {
     
-    @FXML
-    private AnchorPane p1;
-    @FXML
-    private VBox v1;
-    @FXML
-    private VBox v2;
-    @FXML
-    private VBox v3;
+    //@FXML
     
         
     
