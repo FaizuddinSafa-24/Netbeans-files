@@ -17,6 +17,7 @@ public class Controller {
     private Circle circle;
     private double x,y;
     public void up(ActionEvent e ){
+        
         System.out.println("UP");
         circle.setCenterY(y-=10);
     }
