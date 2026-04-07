@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root {
+    -fx-background-color: "white";
+}
+.VBox {
+    -fx-background-color:"black";
+}
