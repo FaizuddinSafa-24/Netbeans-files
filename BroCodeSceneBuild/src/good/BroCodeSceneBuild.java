@@ -62,7 +62,8 @@ public class BroCodeSceneBuild extends Application {
             e.consume();
             logout(stg3);
             
-            //consume() stops event building further
+            //consume() stops event building fu
+            //e.consume();
         });
         
     }
