@@ -3,11 +3,20 @@
  */
 
 .root {
-    -fx-background-color: #222222;
+    -fx-background-color: #000000;
 }
-.VBox {
-    -fx-background-color:"black";
+
+#display {
+    -fx-background-color:#111111;
+    -fx-padding:10;
 }
-.TitlePane {
-    -fx-setColor:"black";
+.button {
+    -fx-background-color:#000000;
+    -fx-text-fill:#ffffff;
+    -fx-font-family: "sans-serif";
+    -fx-font-size:24;
+}
+.label {
+    -fx-background-color:#111111;
+    -fx-text-fill:#ffffff;
 }
