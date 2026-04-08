@@ -27,9 +27,9 @@ public class Calc {
             if (Character.isDigit(c)) {
                 current += c;
             } else {
-                operand = c;
                 num = Double.parseDouble(current);
                 result = getResult(result, num, operand);
+                operand = c;
                 current = "";
             }
         }
