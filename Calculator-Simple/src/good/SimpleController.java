@@ -35,15 +35,21 @@ public class SimpleController {
     public void equal(ActionEvent e) {
         Calc c1 = new Calc(this.input);
         double result = c1.output();
-        expressionLabel.setText(input +" =");
+        expressionLabel.setText(input + " =");
         String output = String.valueOf(result);
         currentLabel.setText(output);
-        input ="";
+        input = "";
     }
 
     public void operation(ActionEvent e) {
         Button one = (Button) e.getSource();
         String buffer = one.getText();
+        if (buffer.equals("%")) {
+            if (!input.isEmpty()) {
+                input += "/100";
+                currentLabel.setText(buffer);
+            }
+        }
         this.input += buffer;
         currentLabel.setText(input);
         System.out.println(buffer);
