@@ -17,7 +17,7 @@ public class Good extends Application {
     @Override
     public void start(Stage stage) {
         Button button = new Button("Click me");
-        button.setOnAction((ActionEvent event) -> {
+        button.setOnAction(event -> {
             System.out.println("You called button.");
         });
         StackPane root = new StackPane();
