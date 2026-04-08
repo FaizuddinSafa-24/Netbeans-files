@@ -4,12 +4,11 @@
  */
 package good;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-
 
 /**
  * FXML Controller class
@@ -17,27 +16,37 @@ import javafx.scene.layout.VBox;
  * @author safa
  */
 public class SimpleController {
-    String input;
+
+    String input = "";
     @FXML
     private VBox display;
-    
+
     @FXML
-    Button one;
+    Label expressionLabel;
+    @FXML
+    Label currentLabel;
+
     public void clear(ActionEvent e) {
         this.input = "";
+        expressionLabel.setText("");
+        currentLabel.setText("0");
     }
+
     public void equal(ActionEvent e) {
         Calc c1 = new Calc(this.input);
         double result = c1.output();
+        expressionLabel.setText(input +" =");
+        String output = String.valueOf(result);
+        currentLabel.setText(output);
+        input ="";
     }
-    
+
     public void operation(ActionEvent e) {
-        one = (Button)e.getSource();
+        Button one = (Button) e.getSource();
         String buffer = one.getText();
         this.input += buffer;
+        currentLabel.setText(input);
         System.out.println(buffer);
     }
-    
-        
-    
+
 }
