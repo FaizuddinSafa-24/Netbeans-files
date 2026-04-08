@@ -24,7 +24,7 @@ public class Calc {
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            if (Character.isDigit(c)) {
+            if (Character.isDigit(c) || c =='.') {
                 current += c;
             } else {
                 num = Double.parseDouble(current);
