@@ -22,9 +22,9 @@ public class SimpleController {
     private VBox display;
 
     @FXML
-    Label expressionLabel;
+   private Label expressionLabel;
     @FXML
-    Label currentLabel;
+    private Label currentLabel;
 
     public void clear(ActionEvent e) {
         this.input = "";
@@ -33,6 +33,12 @@ public class SimpleController {
     }
 
     public void equal(ActionEvent e) {
+        if(input.isEmpty()) {
+            this.input = "0";
+        expressionLabel.setText(input);
+        currentLabel.setText(input);
+        } else {
+            
         Calc c1 = new Calc(this.input);
         double result = c1.output();
         System.out.print(" = "+result);
@@ -41,6 +47,7 @@ public class SimpleController {
         String output = String.valueOf(result);
         currentLabel.setText(output);
         input = "";
+        }
     }
 
     public void operation(ActionEvent e) {
