@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -17,8 +18,12 @@ public class LabMidPrep1 {
         // TODO code application logic here
         Manager m1 = new Manager("Safa",12000,"IT",12);
         m1.displayInfo();
+        for (int i = 0; i < m1.getEmployeeCount(); i++) {
         double bonusSalary =m1.calculatewBonus(20);
-        System.out.println("Bonus + Salary :"+ bonusSalary);
+            
+        System.out.printf("Bonus + Salary for employeecount %d is :%.2f\n",i+1, bonusSalary);
+ 
+        }
     }
     
 }
