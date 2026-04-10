@@ -36,8 +36,8 @@ public class Employee {
         System.out.println("Salary: "+this.getSalary());
     }
     public double calculatewBonus(double bonus) {
-        this.salary = this.getSalary()+(int) Math.ceil(Math.random()*bonus);
-        return salary;
+        bonus = this.getSalary() *bonus;
+        return bonus;
     }
     
 }
