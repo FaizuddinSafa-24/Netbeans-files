@@ -21,7 +21,7 @@ public class LabMidPrep1 {
         for (int i = 0; i < m1.getEmployeeCount(); i++) {
         double bonusSalary =m1.calculatewBonus(0.5);
             
-        System.out.printf("Bonus + Salary for employeecount %d is :%.2f\n",i+1, bonusSalary);
+        System.out.printf("Bonus for employeecount %d is :%.2f\n",i+1, bonusSalary);
  
         }
     }
