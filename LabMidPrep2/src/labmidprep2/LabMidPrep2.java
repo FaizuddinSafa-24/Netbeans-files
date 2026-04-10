@@ -19,10 +19,10 @@ public class LabMidPrep2 {
         h1.displayInfo();
         double fair =h1.calculateTotalPrice(12);
         System.out.println("The total fair is: "+fair);
-        RegularHotelRoom r1 = new RegularHotelRoom("B1",7500, 12, true, false);
+        RegularHotelRoom r1 = new RegularHotelRoom("B1",8000, 12, true, false);
         r1.displayInfo();
-        double fair1 =r1.calculateTotalPrice(12);
-        System.out.println("The total fair is: "+fair);
+        double fair1 =r1.calculateTotalPrice(2);
+        System.out.println("The total fair is: "+fair1);
     }
     
 }

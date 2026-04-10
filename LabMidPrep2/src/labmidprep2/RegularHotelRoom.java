@@ -38,22 +38,23 @@ public class RegularHotelRoom extends HotelRoom {
     }
 
     @Override
-    public double calculateTotalPrice(int days) {
-        double baseFair = super.calculateTotalPrice(days);
-        if (this.getHasAC() == true && this.getHasWifi() == true) {
-            baseFair += 1000;
-        return baseFair;
-        } else if (this.getHasWifi() == true) {
-            baseFair += 300;
-        return baseFair;
+    public double calculateTotalPrice(int days) { 
+        double extra =0;
+        if (hasAC && hasWifi) {
+            extra += 1000;
+        
+        } else if (hasWifi) {
+            extra += 300;
+        
 
-        } else if (this.getHasAC() == true) {
-            baseFair += 700;
-        return baseFair;
+        } else if (hasAC) {
+            extra += 700;
+        
         }
         else {
-            
-        return baseFair;
+            extra =0;
         }
+        System.out.println((super.getPricePerNight()+extra)* days);
+        return ((getPricePerNight()+extra)* days);
     }
 }
