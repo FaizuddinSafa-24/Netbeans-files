@@ -12,19 +12,21 @@ public class Ship {
 
     private String shipName;
 
-    public Ship() {
+    public Ship(String shipName) {
+        this.shipName = shipName;
+    }
 
-    }
-    public Ship(String name) {
-        this.shipName =name;
-    }
-    
-    public void setShipName(String shipName) {
-        this.shipName =shipName;
-    }
-    public String getShipName () {
+    public String getShipName() {
         return shipName;
     }
+
+    public void setShipName(String shipName) {
+        this.shipName = shipName;
+    }
+
+   
+    
+   
     public void displayDetails() {
         
     }
